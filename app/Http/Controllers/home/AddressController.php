@@ -360,14 +360,13 @@ class AddressController extends Controller
                         }else if($province == $v1->takeprovince){
                             //计算公式为:首重价格+续重价格*(重量*数量-1);
                             $nums=$num[$key];
-                            if(($val->weight*$nums-1) == -1){
+                            if(($val->weight*$nums-1) <= 0){
                                 // 如果重量为 0 则额外重量则为 0kg
                                 $extra_weight = 0;
-                            }else if(($val->weight*$nums-1) < 0){
-                                $extra_weight = 1;
                             }else{
                                 $extra_weight = ceil($val->weight*$nums-1);
                             }
+
                             $money[$key] = $v1->first_price+$v1->extra_price*$extra_weight;
                             $strlen = strlen($val->title);
                             $carriageList[$key] = "<div class='address-detail cart-title' style='font-size: 12px'>".mb_substr($val->title,0,18)."<span style='float: right'>"."￥".$money[$key]."</span>"."</div>";

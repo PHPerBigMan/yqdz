@@ -89,14 +89,14 @@
                                 <i class="am-icon-cloud-download"></i>
                                 导出订单
                             </a>
-                            <a class="am-btn am-btn-sm am-btn-primary" @click="shaixuanwx">
-                                <i class="am-icon-search"></i>
-                                按微信昵称排序
-                            </a>
-                            <a class="am-btn am-btn-sm am-btn-primary" @click="shaixuantime">
-                                <i class="am-icon-search"></i>
-                                按默认顺序排序
-                            </a>
+                            {{--<a class="am-btn am-btn-sm am-btn-primary" @click="shaixuanwx">--}}
+                                {{--<i class="am-icon-search"></i>--}}
+                                {{--按微信昵称排序--}}
+                            {{--</a>--}}
+                            {{--<a class="am-btn am-btn-sm am-btn-primary" @click="shaixuantime">--}}
+                                {{--<i class="am-icon-search"></i>--}}
+                                {{--按默认顺序排序--}}
+                            {{--</a>--}}
                         </div>
                     </form>
                 </div>

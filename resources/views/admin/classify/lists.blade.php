@@ -27,7 +27,7 @@
             <tr>
                 <th width="90">ID</th>
                 <th>分类名称</th>
-                <th>分类类型</th>
+
                 <th width="180">操作</th>
             </tr>
             </thead>
@@ -37,9 +37,7 @@
                 <td>
                     @{{ item.name }}
                 </td>
-                <td>
-                    @{{ item.type }}
-                </td>
+
                 <td>
                     <a type="button" class="am-btn am-btn-success am-btn-sm" @click="edit(item.classifyid,this)"><span class="am-icon-pencil-square-o"></span>  编辑</a>
                     <a type="button" class="am-btn am-btn-danger am-btn-sm" @click="del(item.classifyid,this)"><span class="am-icon-trash-o"></span>  删除</a>

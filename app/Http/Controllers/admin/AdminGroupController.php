@@ -24,10 +24,11 @@ class AdminGroupController extends Controller
 
     public function edit(Request $request){
         $data=AdminGroup::where('groupid',$request->id)->first();
-        $data['ruleid']=explode(",",$data['ruleid']);
+//        $data['ruleid']=explode(",",$data['ruleid']);
 
         $rule=AdminRule::all();
         $cat=AdminRuleCat::all();
+
         foreach ($rule as $k => $v){
             if(in_array($v['ruleid'],$data['ruleid'])){
                 $rule[$k]['isselected'] = 1;

@@ -66,6 +66,7 @@
                             <thead>
                             <tr>
                                 <th width="240">定制编号</th>
+                                <th width="240">定制标题</th>
                                 <th>定制用户</th>
                                 <th>定制分类</th>
                                 {{--<th>定制标题</th>--}}
@@ -79,6 +80,7 @@
                             @foreach($data as $v)
                                 <tr>
                                     <td>{{$v->designid or ''}}</td>
+                                    <td>{{$v->title or ''}}</td>
                                     <td><img src="{{$v->user->img or ''}}" width="40"> {{ $v->user->nickname or '' }}</td>
 {{--                                    <td>{{ $v->title or '' }}</td>--}}
                                     <td>

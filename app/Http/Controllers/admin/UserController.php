@@ -8,7 +8,8 @@ use App\Models\Dividedinto;
 use App\Models\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use PHPExcel;
+use PHPExcel_Writer_Excel5;
 class UserController extends Controller
 {
     public function lists(Request $request){
@@ -136,7 +137,7 @@ class UserController extends Controller
                 }
             }
         }
-        $strTable ='<table width="100%" border="1">';
+        $strTable ='<table width="100%" border="1" style="border-collapse:collapse;">';
         $strTable .= '<tr>';
         $strTable .= '<td style="text-align:center;font-size:14px;" height="30" width="80">微信昵称</td>';
         $strTable .= '<td style="text-align:center;font-size:14px;" height="30" width="80">注册时间</td>';
@@ -148,7 +149,6 @@ class UserController extends Controller
         $strTable .= '</tr>';
         foreach($outData as $k=>$val){
 
-            $strTable .= '<tr>';
             if(!empty($val['address'])){
                 foreach($val['address'] as $v1) {
                     $strTable .= '<tr>';
@@ -172,8 +172,6 @@ class UserController extends Controller
                 $strTable .= '<td style="text-align:center;font-size:14px;" height="30" width="140"></td>';
                 $strTable .= '</tr>';
             }
-
-            $strTable .= '</tr>';
         }
         $strTable .='</table>';
         header("Content-type: application/vnd.ms-excel");

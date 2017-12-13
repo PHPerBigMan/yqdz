@@ -181,17 +181,17 @@ class Page extends Controller
     {
         if($request->keyword){
             $keyword=$request->keyword;
-            $type='latest';
+            $type=$request->type;
         }
         // dump($request->type);die;
         switch ($type) {
             case 'latest': // 最新
                 $type='starttime';
-                $orderby='asc';
+                $orderby='desc';
                 break;
             case 'oldest': // 最老
                 $type='starttime';
-                $orderby='desc';
+                $orderby='asc';
                 break;
             case 'most': // 最多
                 $type='hostess';
@@ -203,13 +203,14 @@ class Page extends Controller
                 break;
             case 'cheap': // 最便宜
                 $type='money';
-                $orderby='desc';
+                $orderby='asc';
                 break;
             case 'expensive': // 最贵
                 $type='money';
-                $orderby='asc';
+                $orderby='desc';
                 break;
         }
+//        dd($type);
         if ($keyword) {
             $searchResult=Commodity::where('title', 'like', '%'.$keyword.'%')->where('status',1)->orderBy($type, $orderby)->get();
             foreach ($searchResult as $k => $v) {
@@ -232,7 +233,7 @@ class Page extends Controller
     // 发起定制
     public function customSubmit()
     {
-        $customCate=Classify::where('type',0)->get();
+        $customCate=Classify::where('type',1)->get();
 
 //         dd($customCate);
         // return response()->json(["status"=>200,"msg"=>"发布成功！"]);

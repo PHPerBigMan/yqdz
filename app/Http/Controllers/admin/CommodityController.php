@@ -126,10 +126,13 @@ class CommodityController extends Controller
 
                 if($ifHas){
                     Commodity::where('recom_order','>',$request->recom_order -1)->increment('recom_order');
+                }else{
+                    // 如果没有
+                    $request->recom_order =  (Commodity::orderBy('recom_order','desc')->value('recom_order')) + 1;
                 }
             }else{
                 //没有填写 排序
-                $request->recom_order =  Commodity::orderBy('recom_order','desc')->value('recom_order');
+                $request->recom_order =  (Commodity::orderBy('recom_order','desc')->value('recom_order')) + 1;
 //                $request->recom_order =  Commodity::orderBy('recom_order','desc')->value('recom_order');
             }
             if($request->hot_order){
@@ -137,10 +140,12 @@ class CommodityController extends Controller
 
                 if($ifHas){
                     Commodity::where('hot_order','>',$request->hot_order -1)->increment('hot_order');
+                }else{
+                    $request->hot_order =  (Commodity::orderBy('hot_order','desc')->value('hot_order')) + 1;
                 }
             }else{
                 //没有填写 排序
-                $request->hot_order =  Commodity::orderBy('hot_order','desc')->value('hot_order');
+                $request->hot_order =  (Commodity::orderBy('hot_order','desc')->value('hot_order')) + 1;
             }
 
             // if(empty($request->lunbo)){
@@ -241,6 +246,7 @@ class CommodityController extends Controller
                 return response()->json(['status'=>404,'msg'=>"添加失败"]);
             }
         }else{
+
             if($request->recom_order){
                 // 查询 该排序是否已被使用 (老)
                 $ifHas = Commodity::where('recom_order',$request->recom_order)->value('commodityid');
@@ -279,8 +285,6 @@ class CommodityController extends Controller
                     Commodity::whereBetween('hot_order',[$min,$max])->increment('hot_order');
                 }
             }
-
-
 
             $path=$request->file('suolvetu');
             $dzpath = $request->file('dz_suolvetu');
@@ -340,7 +344,7 @@ class CommodityController extends Controller
                 $lb = array_merge($lb,$res);
                 $request->lunbo=json_encode($lb);
             }else{
-                $request->lunbo=json_encode($res);
+                $request->lunbo=json_encode($request->xcimg);
             }
 
             $list=Commodity::where('commodityid',$request->commodityid)->update([
@@ -414,7 +418,13 @@ class CommodityController extends Controller
     }
 
     public function del(Request $request){
+        // 查询改商品的精选排名和 推荐排序
+        $recom_order = Commodity::where('commodityid',$request->id)->select('recom_order','hot_order')->first();
+        // 删除后修改其他商品的排序
+        Commodity::where('recom_order','>',$recom_order->recom_order)->decrement('recom_order');
+        Commodity::where('hot_order','>',$recom_order->hot_order)->decrement('hot_order');
         if(Commodity::where('commodityid',$request->id)->delete()){
+
             return response()->json(['status' => '200', 'msg' =>'删除成功!',]);
         }else{
             return response()->json(['status' => '404', 'msg' =>'删除失败!',]);

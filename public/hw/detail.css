@@ -1,0 +1,72 @@
+@font-face {font-family: 'iconfont';
+    src: url('../font/iconfont.eot'); /* IE9*/
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+.page, .page-group{background: rgb(238,238,238)}
+.row{background: #fff}
+.hnav .col-50{margin-left: 0px !important;width: 50% !important}
+.hnav{text-align: center;height: 44px;}
+.hnav .col-50{height: 44px;line-height: 44px;font-size: 16px;}
+.spxq{background: #ff0c43;color: #fff;height: 45px;}
+.swiper-container{padding-bottom: 0px !important;}
+.swiper-wrapper img{width: 100%}
+.swiper-container-horizontal>.swiper-pagination{bottom: 1rem}
+.swiper-pagination-bullet-active{background: #fff !important}
+.content-padded{margin: 0px !important;padding: .5rem !important;background: #fff}
+.goodsdetail .row{margin: 5px 0px;margin-left: -4%}
+.goodsdetail h1{font-size: 17px;margin: 0px;padding: 0px;color: #141417;font-weight: normal}
+.goodsdetail .col-33,.goodsdetail .col-50{font-size: 14px;color: #999999}
+.goodsdetail .col-50 b{color: #ff1b43;font-size: 18px;}
+.tr{text-align: right}
+.tc{text-align: center}
+.tuijian{border-top: 1px solid #eeeeee ;background: #fff;padding-bottom: 10px;}
+.mjtj{margin: 0px;margin-left: 4%;margin-top: 10px;font-size: 14px;margin-bottom: 10px;}
+.tuijian .col-33 img{width: 100%}
+.tuijian .col-33 p,.tuijian .col-33 b{margin: 0px;text-align: center;width: 100%;display: block;}
+.tuijian .col-33 a{color: rgb(20,20,23)}
+.tuijian .col-33 p{font-size: 12px;height: 35px;overflow: hidden}
+.tuijian .col-33 b{font-size: 14px;color: #ff1b43}
+.kefu{width: 12%;padding: 5px;background: #fff;float: left;border-right: 1px solid #e3e3e3}
+.kefu .icon{display: block !important;padding: 0px;text-align: center}
+.kefu span{text-align: center;display: block;font-size: 12px;}
+.gouwu{width: 32%;background: #ff9414;float: left;height: 2.5rem;line-height: 2.5rem;text-align: center;color: #fff;font-size: 17px;}
+.goumai{width: 32%;background: #ff0043;float: left;height: 2.5rem;line-height: 2.5rem;text-align: center;color: #fff;font-size: 17px;}
+
+
+.login-screen, .popup{height: 400px !important;bottom: 0px !important;top: auto !important;overflow: visible !important;}
+.popup-about p{margin: 0px;}
+.popup-about .content-block{margin: .75rem 0px}
+.ptitle{position: relative;border-bottom: 1px solid #e1e1e1;height: 70px}
+.pimg{width: 94px;height: 94px;border-radius: 4px;position: absolute;top: -40px;z-index: 999999}
+.pimg img{width: 100%}
+.pbody{margin-left: 110px;}
+.pbody b{font-size: 20px;color: #ff1a43}
+.pbody p{font-size: 14px;}
+.guanbi{position: absolute;top: 0px;right: 0px;font-size: 20px !important}
+.guige{border-bottom: 1px solid #e1e1e1;padding: 10px 0px;padding-bottom: 20px;max-height: 220px;overflow-y: auto}
+.guige ul{margin: 0px;padding: 0px;}
+.guige p{font-size: 14px;margin-bottom: 5px;margin-top: 5px;}
+.clear{clear: both}
+.guige ul li{float: left;list-style: none;border: 1px solid #979797;font-size: 12px;color: #979797;border-radius: 4px;padding: 4px 10px;margin-right: 10px;margin-bottom: 8px;margin-top: 4px}
+.guige ul li.active{border: 1px solid #ff0043;color: #ff0043}
+.nub{border-bottom: 1px solid #e1e1e1;padding: 10px 0px;}
+.nub .col-50{font-size: 14px;}
+.nub .col-50 span{border: 1px solid #999999;padding: 1px 8px;display: inline-block}
+.queding{height: 49px;position: absolute;bottom: 0px;left: 0px;width: 100%;line-height: 49px;text-align: center;background: #ff0043;color: #fff}
+.detailbox{background: #fff;padding: 10px;}
+.detailbox img{max-width: 100%}
+.detailbox p{margin: 0px;}
+.bar .icon{padding: 0px !important}
+
+.love{color: #ff9414}
+
+.kefu a{color: #3d4145}

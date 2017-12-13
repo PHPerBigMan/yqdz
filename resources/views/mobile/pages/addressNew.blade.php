@@ -85,7 +85,7 @@
                     });
                     return false;
                 }
-                if(!phone.match(/^0?1[3|4|5|8][0-9]\d{8}$/)){
+                if(phone.length < 11){
                     layer.open({
                         content: '手机号码格式不正确'
                         ,btn: '我知道了'

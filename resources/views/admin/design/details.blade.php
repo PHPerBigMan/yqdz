@@ -30,6 +30,27 @@
                 </div>
                 <div class="am-hide-sm-only am-u-md-6"></div>
             </div>
+            <div class="am-g am-margin-top">
+                <div class="am-u-sm-3 am-u-md-2 am-text-right">定制类型</div>
+                <div class="am-u-sm-8 am-u-md-10">
+                    <select name="is_qiye" id="">
+                        <option value="1" <?php if($data->is_qiye == 1) echo "selected";?>>私人定制</option>
+                        <option value="2" <?php if($data->is_qiye == 2) echo "selected";?>>企业定制</option>
+                    </select>
+                </div>
+                <div class="am-hide-sm-only am-u-md-6"></div>
+            </div>
+        <div class="am-g am-margin-top">
+            <div class="am-u-sm-3 am-u-md-2 am-text-right">定制分类</div>
+            <div class="am-u-sm-8 am-u-md-10">
+                <select name="cat_id" id="">
+                    @foreach($cat as $v)
+                        <option value="{{ $v->classifyid }}" <?php if($data->cat_id == $v->classifyid) echo "selected";?>>{{ $v->name }}</option>
+                        @endforeach
+                </select>
+            </div>
+            <div class="am-hide-sm-only am-u-md-6"></div>
+        </div>
         <div class="am-g am-margin-top">
             <div class="am-u-sm-3 am-u-md-2 am-text-right">内容</div>
             <div style="margin: 50px 260px">

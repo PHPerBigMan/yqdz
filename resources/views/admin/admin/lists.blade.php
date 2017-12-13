@@ -106,13 +106,12 @@
                     btn: ['确定', '取消'],
                     yes: function(){
                         $.get('del/?id='+id,function (data) {
-                            console.log(data)
-                            if(data['status']= "200"){
+                            if(data['status']== "200"){
                                 layer.msg('删除成功！',function () {
                                     window.location.reload();
                                 });
                             }else{
-                                layer.msg(data['text']);
+                                layer.msg(data['msg']);
                             }
                         })
                     }

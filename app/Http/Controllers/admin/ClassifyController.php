@@ -11,7 +11,7 @@ use App\Http\Controllers\Controller;
 class ClassifyController extends Controller
 {
     public function lists(){
-       $data=Classify::all();
+       $data=Classify::where('type',0)->get();
 
        return view('admin.classify.lists',['data'=>$data]);
     }

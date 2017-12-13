@@ -36,7 +36,7 @@ class DesignController extends Controller
 
             foreach ($data as $key => $val) {
 //                $cate_name=Classify::where(array('classifyid'=>$val['cate_id'],'type'=>1))->value('name');
-                $cate_name=Classify::where(array('classifyid'=>$val->cate_id,'type'=>0))->value('name');
+                $cate_name=Classify::where(array('classifyid'=>$val->cate_id,'type'=>1))->value('name');
                 $val->user=User::where('uid',$val->uid)->first();
                 if($cate_name){
                     $val->cate_id = $cate_name;
@@ -101,10 +101,12 @@ class DesignController extends Controller
             $msg='修改定制信息';
         }
 
+        // 获取定制 分类
+        $cat  = Classify::where('type',1)->get();
         $data=Design::where('designid',$request->id)->first();
 
 //        $data['content']=html_entity_decode($data['content']);
-        return view('admin.design.details',['data'=>$data,'msg'=>$msg]);
+        return view('admin.design.details',['data'=>$data,'msg'=>$msg,'cat'=>$cat]);
     }
     public function del(Request $request){
         if(empty($request->id)){
@@ -147,7 +149,9 @@ class DesignController extends Controller
             $data=Design::where('designid',$request->designid)->update([
                 'title'=>$request->title,
                 'backcontent'=>$_POST['backcontent'],
-                'phone'=>$request->phone
+                'phone'=>$request->phone,
+                'cate_id'=>$request->cat_id,
+                'is_qiye'=>$request->is_qiye
             ]);
 //        dd($data);
             if ($data !==false){
@@ -190,4 +194,3 @@ class DesignController extends Controller
     }
 
 }
-

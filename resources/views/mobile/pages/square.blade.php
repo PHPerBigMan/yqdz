@@ -66,6 +66,9 @@
         <a href="/cart">
             <div class="m-cart-icon"></div>
         </a>
+        <a href="/custom-submit">
+            <div class="m-cart-icon-fix"><img src="{{imgurl('btn-wangqihuigu@2x.png')}}" alt="发起定制"></div>
+        </a>
         @include('mobile.components.navbar',['active' => 'square'])
     </div>
 

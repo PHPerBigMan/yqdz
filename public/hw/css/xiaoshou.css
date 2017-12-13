@@ -1,0 +1,118 @@
+body{font-family: '微软雅黑';}
+.box1{height: 75px;background: #ffffff;line-height: 75px;text-align: center;color: #c9c9c9;font-size: 14px;}
+p{margin: 0px;}
+.box2{height: 100px;background: #219e21;padding: 10px;margin-top: 10px;}
+.box2 p{margin: 0px;color: #ffffff;text-align: center}
+.box2 p.p1{text-align: left;font-size: 12px;}
+.box2 p.p2{font-size: 30px;}
+.box2 p.p3{font-size: 13px;}
+
+.box3{background: #ffffff;padding: 20px;margin-top: 10px;text-align: center}
+.box3 p{font-size: 12px;}
+.box3 p b{font-size: 25px;color: #219e21}
+
+.box4{padding: 8px;background: #ffffff;margin-top: 10px;font-size: 13px;line-height: 25px;}
+.box4 a{color: #000}
+i.link{width: 22px; height: 22px; background: url("../images/iconfont_you@2x.png") no-repeat center center;display: inline-block;background-size: cover;float: right;margin-top: 2px}
+i.tuiguang{width: 22px; height: 22px;  background: url("../images/icon_kaishituiguang@2x.png") no-repeat center center;float: left;display: inline-block;background-size: cover;}
+i.shanpin{width: 22px; height: 22px;  background: url("../images/icon_tuiguangdechanpin@2x.png") no-repeat center center;float: left;display: inline-block;background-size: cover;}
+.btn-success {
+    color: #fff;
+    background-color: #219e21;
+    border-color: #219e21;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.hrl{border: none;border-top: 1px dashed #bbbbbb;margin-top: 20px;}
+.jishu{width: 80%; margin: 0px auto;text-align: center;margin-bottom: 10px;}
+
+
+.dtop{height: 30px;background: #fff;font-size: 12px;padding: 0px 10px;line-height: 30px;position: fixed;top: 0px;width: 100%;left: 0px;margin-left: 0px !important;z-index: 999}
+.mt20{margin-top: 20px;}
+.dbox{    background: #ffffff;  padding: 0px 10px;  margin-bottom: 15px;margin-top: 20px;padding-bottom: 15px;}
+.dbox1 {
+    border-bottom: 1px solid #ebebeb;
+    padding: 10px 0px 0px 0px;
+    height: 25px;
+}
+.dbox3 {
+    border-bottom: 1px solid #ebebeb;
+    padding: 10px 0px 0px 0px;
+    height: 35px;
+}
+.dbox1 p {
+    font-size: 11px;
+    color: #333333;
+    margin-top: 0px;
+    float: left;
+    margin-bottom: 0px;
+}
+.dbox2 {
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 8px;
+    padding-top: 10px;
+}
+.dbox2 img {
+    float: left;
+}
+.btitle p {
+    margin: 0px;
+    float: left;
+    color: #000;
+    width: 70%;
+    height: 45px;overflow: hidden;
+}
+.btitle, .bcon {
+    font-size: 14px;
+    width: 80%;
+    float: right;
+}
+.btitle span {
+    float: right;
+}
+.bcon p {
+    font-size: 10px;
+    width: 80%;
+    float: left;
+    margin: 0px;
+    margin-top: 5px;
+    color: #a5a5a5;
+}
+.dbox3 {
+    text-align: right;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.hdbox{    background: #ffffff;  padding: 0px 10px; padding-bottom: 15px;border-bottom: 1px solid #e6e6e6}
+.hdbox2 {
+    padding-top: 10px;
+    font-size: 12px;
+}
+.hdbox2 img {
+    float: left;
+    margin-right: 10px;
+}
+.tr{text-align: right}
+.yongjin{color: rgb(209,141,99)}

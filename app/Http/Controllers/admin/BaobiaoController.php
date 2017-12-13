@@ -92,7 +92,7 @@ class BaobiaoController extends Controller
 
         $all_date = $arr;
 
-        $data = Order::where('pay_time', '>', $start)->where('pay_time', '<', $end)->with('snop')->select('pay_time', 'orderid', 'money', 'refund_amount')->limit(10,12)->get();
+        $data = Order::where('pay_time', '>', $start)->where('pay_time', '<', $end)->with('snop')->select('pay_time', 'orderid', 'money', 'refund_amount')->get();
 //        dd($data);
 
         foreach ($data as $k => $v) {

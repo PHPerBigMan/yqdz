@@ -1,0 +1,140 @@
+.hw-one-link{margin-top: 0px;}
+.hw-one-link ul{background: none !important;}
+.hw-one-link ul li{margin-bottom: 10px;background: #fff;position: relative}
+.hw-one-link ul li i{display: inline-block;width: 28px;height: 28px;position: absolute;left: 5px;top: 7px}
+i.order{background: url("../hw/images/icon_wodedingdan@2x.png");background-size: cover;}
+i.message{background: url("../hw/images/icon_wodexinxi@2x.png");background-size: cover;}
+i.fanxian{background: url("../hw/images/icon_fanxianjilu@2x.png");background-size: cover;}
+i.jiangli{background: url("../hw/images/icon_jiangliguize@2x.png");background-size: cover;}
+i.kefu{background: url("../hw/images/icon_lianxikefu@2x.png");background-size: cover;}
+.hw-one-link .item-text{height: auto !important;}
+.hw-center-top{background:url("../hw/images/pic_banner_Background@2x.jpg") center center;padding: 20px;margin: 0px 0px 10px 0px;height: 190px; background-size: cover;text-align: center;position: relative}
+.hw-center-top img{border-radius: 50%;width: 100px;border: 2px solid #fff}
+.hw-center-top p{position: absolute;bottom: 0px;background: rgba(0,0,0,0.5);height: 50px;width: 100%;margin: 0px;left: 0px;line-height: 50px;color: #fff;}
+/**-----以上个人中心-------**/
+#order p{margin: 0px;}
+.order{padding:0px 12px;background: #ffffff;margin-bottom: 15px}
+.order p{font-size: 12px;padding: 7px 0px;}
+.order p span.fahuo{float: right;color: #ffa200}
+.orderbox{border: 1px solid #ebebeb;border-left: none;border-right: none;padding: 10px 0px;}
+.orderbox img{float: left;margin-right: 10px;}
+.orderbox p{padding: 0px !important;font-size: 13px;margin-left: 60px !important;}
+.orderbox p.info{height: 40px;word-break:break-all;word-wrap:break-word;overflow: hidden}
+.orderbox p.hwtitle{font-size: 17px}
+.orderbox p span.money{color: #ff0000;float: right;margin-bottom: 0px !important;}
+
+/**-----------以上我的订单----------------**/
+#message p{margin: 0px;}
+.message p{color: #666666;font-size: 15px;}
+.message p.title-fahuo{color: #ff0000;font-size: 16px;}
+/**-----------以上我的消息----------------**/
+#money p{margin: 0px;}
+.nomoney{background: #fff;text-align: center;height:150px;position: relative;margin-bottom: 20px;}
+.nomoney p{position: absolute;top:40px;text-align: center;display: block;width: 100%}
+.zhaofanxian{border: 1px solid #ff0000;padding:6px 15px;font-size: 15px;color: #ff0000;position: absolute;bottom: 30px;left: 50%;margin-left: -33px;}
+.money{padding:0px 12px;background: #ffffff;margin-bottom: 15px}
+.money p{font-size: 12px;padding: 7px 0px;min-height: 28px;}
+.money p span.dengji{color: #ff0000;float: right;}
+.moneybox{height: 90px;border: 1px solid #ebebeb;border-left: none;border-right: none;padding: 10px 0px;}
+.moneybox img{float: left;margin-right: 10px;border-radius: 50%;width: 65px}
+.moneybox p{padding: 0px !important;font-size: 13px;}
+.moneybox p.time{font-size: 13px;color: #999999}
+.moneybox p.zhanghao{font-size: 16px;color: #000}
+.moneybox p.fanxian{font-size: 16px;color: #ff0000;margin-top: 8px !important;}
+/**-----------以上我的返现----------------**/
+#jiangli p{margin: 0px;line-height: 20px;}
+.jiangli-header{background: #009523;text-align: center}
+.card1{border-bottom: 1px dashed #999;margin-bottom: 10px;font-size: 13px;padding-bottom: 10px;}
+.card2{margin-bottom: 10px;font-size: 13px;}
+.card1 p,.card2 p{line-height: 2.2rem}
+.jlbtn{background: #009523;height:45px;width: 100%;border-radius: 50px;line-height: 45px;text-align: center;font-size: 18px;color: #fff}
+#jiangli p.b1{font-size: 16px;}
+#jiangli .card-footer, .card-header{display: block}
+#jiangli .card{border-radius: .5rem}
+#jiangli .card-header{border-radius: .6rem .6rem 0 0;}
+/**-----以上我的规则------**/
+.tgbox{padding: 10px;background: #fff}
+#extension p{margin: 0px;}
+.extension p.money{font-size: 14px;text-align: center}
+.extension p.money b{color: red;font-size: 30px;}
+
+
+
+.extension p.tag{font-size: 10px;color: #666666;text-align: center}
+.tgbox2{background: #219e21;height:90px;margin: 0px !important;text-align: center !important;color: #fff;font-size: 15px;padding: 10px 0px}
+.tgbox2 .col-33{border-right: 1px solid #fff}
+.tgbox2 .col-33 a{color: #fff}
+.tgbox2 .col-33:nth-last-child(1){border: none}
+.tgren .item-title{font-size: 16px}
+.tgren .item-after{font-size: 15px;color: #999999}
+.round{width:16px;height:16px;display: block;font-size:20px;line-heigth:22px !important;text-align:center;color:red;text-decoration:none;margin-top: -17px}
+.tgren .item-inner p{font-size: 15px;}
+.tgren .item-inner p b{color: #ff0000}
+#extension .list-block{margin: 0.80rem 0px}
+.first .item-title,.first .round{color: #999 !important;}
+.second .item-title,.second .round{color: #999 !important;}
+.three .item-title,.three .round{color: #999 !important;}
+.first{overflow: hidden}
+
+.paihang .row{width: 100%;margin-left: 0px;font-size: 15px;}
+.phfirst{color: #219e21 !important;}
+.phmoney{color: #ff0000}
+.allback{position: absolute; top: 0%; left: 0%; width: 100%; height: 100%; background-color: black; z-index:1001; -moz-opacity: 0.7; opacity:.70; filter: alpha(opacity=70);display: none;}
+.code{width: 300px;height: 340px;background: #fff;position: fixed;top: 50%;margin-top: -150px;z-index: 99999;padding: 30px 55px;left: 50%;margin-left: -150px;text-align: center;display: none;}
+.code img{width: 100%}
+.code p{font-size: 14px;}
+.codec1{color: #959ca1}
+.codec2{color: #48cbd1}
+
+/**------以上是我的推广-----*/
+
+.shouye{margin-top: 20px;position: relative}
+.shouye .no-border{padding-bottom: 0px;}
+.shouye .ctitle{color: #000;font-size: 16px}
+.shouye .info{color: #666666;font-size: 15px;word-break:break-all;word-wrap:break-word;overflow: hidden}
+.no{width: 80px;height: 80px;background: url("../hw/images/yinzhang_yishouqin.png");background-size: cover;position: absolute;bottom: 60px;right: 20px;}
+.yes{width: 80px;height: 80px;background: url("../hw/images/yinzhang_youhuoremai.png");background-size: cover;position: absolute;bottom: 60px;right: 20px;}
+
+
+/**-----以下商品详情页-------**/
+.goumai{height: 50px;line-height: 50px;width: 100%;position: fixed;bottom: 0px;left: 0px}
+.goumai a{color: #fff}
+.goumai .col-50{width: 50%;float: left;font-size: 18px}
+.lxkf{background: #666666;}
+.ljgm{background: #111111;margin-left: 0px !important;}
+.lxkf,.ljgm{height: 50px;line-height: 50px;text-align: center;color: #fff}
+
+.gminfo{padding: 10px;background: #fff;margin-top: -30px;min-height: 90px;}
+.gminfo img{float: right;margin-top: 10px}
+.gminfo h1{font-size: 18px;margin: 0px}
+.gminfo h1 b{font-size: 15px;color: #ff0000}
+.gminfo p{margin-right: 80px;}
+.deinfo{font-size: 15px;color: #666666;word-break:break-all;word-wrap:break-word;}
+.demoney{font-size: 17px;color: #ff0000}
+.demoney span{margin-left: 20px;font-size: 15px;color: #999999}
+.spbox{margin-top: 10px;background: #fff;min-height: 200px;padding: 15px}
+.sptitle{text-align: center;margin-bottom: 15px}
+.sptitle img{width:180px}
+.articlebox{padding-bottom: 50px;}
+.articlebox img{max-width: 100%}
+
+
+.icon-info{background: url("../hw/images/icon_shangpingxinxi@2x.png");width: 28px;height: 24px;background-size: cover}
+.icon-tg{background: url("../hw/images/icon_wodetuiguang@2x.png");width: 28px;height: 24px;background-size: cover}
+.icon-user{background: url("../hw/images/icon_gerenzhongxin@2x.png");width: 28px;height: 24px;background-size: cover}
+
+.obox1img{float: left;margin-right: 10px;}
+.obox1 b{font-size: 17px;color: #ff0000;}
+.obox1 h1{margin: 0px;font-size: 17px;color: #333333;margin-top: 5px}
+.obox1 p{word-break:break-all;word-wrap:break-word;margin-top: 0px ;margin-bottom: 0px}
+.obox1 ul{padding: 0px;margin: 0px;list-style: none;margin-top: 10px;}
+.obox1 ul li{float: left;width: 32%;padding: 5px;border: 1px solid #f5f5f5;margin-right: 3px;}
+.obox1 ul li img{max-width: 100%;margin-bottom: 5px;}
+.obox1 ul li p{margin: 0px !important;}
+.obox2{font-size: 15px}
+.obox2 h3{text-align: center;border-bottom: 1px solid #e7e7e7;margin-top: 0px;padding-bottom: 10px;}
+
+.hcard h3{margin: 0px;text-align: center}
+
+
+.jiangli2{width: 90%;height: 400px;position: absolute;top: 40px;left: 50%;margin-left: -45%;z-index: 9999;display: none}
